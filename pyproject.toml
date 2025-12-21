@@ -1,0 +1,37 @@
+[build-system]
+requires = ["maturin>=1.10,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "pyzalea"
+version = "0.1.0"
+description = "Bindings of the azalea-rs library for Python"
+readme = "README.md"
+license = { text = "LGPL-2.1" }
+requires-python = ">=3.8"
+keywords = ["minecraft", "bot", "azalea"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: LGPL-2.1",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+]
+
+[project.optional-dependencies]
+rl = ["gymnasium", "numpy"]
+
+[project.urls]
+Repository = "https://github.com/bl791/pyzalea"
+Documentation = "https://github.com/bl791/pyzalea"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
