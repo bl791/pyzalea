@@ -1,0 +1,30 @@
+[package]
+name = "pyzalea"
+version = "0.1.0"
+edition = "2021"
+description = "Bindings of the azalea-rs library for Python"
+license = "LGPL-2.1"
+repository = "https://github.com/bl791/pyzalea"
+keywords = ["minecraft", "bot", "python"]
+categories = ["game-development", "api-bindings"]
+
+[lib]
+name = "pyzalea"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.23", features = ["extension-module"] }
+tokio = { version = "1", features = ["full", "sync", "rt-multi-thread"] }
+parking_lot = "0.12"
+lazy_static = "1.4"
+
+# Azalea - Rust Minecraft bot library
+azalea = { git = "https://github.com/azalea-rs/azalea", branch = "main" }
+azalea-client = { git = "https://github.com/azalea-rs/azalea", branch = "main" }
+azalea-entity = { git = "https://github.com/azalea-rs/azalea", branch = "main" }
+azalea-core = { git = "https://github.com/azalea-rs/azalea", branch = "main" }
+azalea-world = { git = "https://github.com/azalea-rs/azalea", branch = "main" }
+azalea-protocol = { git = "https://github.com/azalea-rs/azalea", branch = "main" }
+
+
+anyhow = "1.0"
