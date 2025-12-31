@@ -9,7 +9,7 @@ Not all Azalea methods are implemented as this was originally designed for a ver
 ## Installation
 
 ```bash
-pip install pyzalea
+pip install git+https://github.com/bl791/pyzalea
 ```
 
 Or build from source:
