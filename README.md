@@ -4,6 +4,8 @@ Bindings of the [azalea-rs](https://github.com/azalea-rs/azalea) library for Pyt
 
 Not all Azalea methods are implemented as this was originally designed for a very narrow use-case (RL) but contributions are more than welcome.
 
+[Join the Discord](https://discord.com/invite/JmqmBGKz7z) (for PvPBot, teaching AI to play Crystal PvP!)
+
 ## Installation
 
 ```bash
